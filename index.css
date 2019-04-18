@@ -47,3 +47,62 @@ table {
 	border-spacing: 0;
 }
 
+
+
+/* Nav */
+#nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	background-color: #fff;
+}
+
+#logo {
+	display: flex;
+	justify-content: center;
+	width: 25%;
+	padding: 1.2rem 0;
+}
+
+#logo img {
+	border-radius: 50px;
+	cursor: pointer;
+}
+
+.nav-links {
+	display: flex;
+	justify-content: center;
+	width: 60%;
+	align-items: center;
+}
+
+.nav-links a {
+	padding: 1rem;
+	cursor: pointer;
+}
+
+.nav-links a:hover {
+	opacity: 0.8;
+}
+
+
+/* Top Header */
+#header-top {
+	margin-top: 5rem;
+	z-index: 1;
+}
+
+#header-top img {
+	width: 100%;
+}
+
+
+/* Dynamically Generated Elements */
+section {
+	display: flex;
+	justify-content: center;
+	padding: 3rem;
+}

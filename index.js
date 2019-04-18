@@ -1,7 +1,10 @@
 // Function to add elements
 const addNode = () => {
   const node = document.createElement('div');
-  node.innerHTML = 'SuperCool';
+  node.innerHTML = `
+    <section>
+      SuperCool
+    </section >`;
   document.body.appendChild(node);
 };
 
