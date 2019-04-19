@@ -34,6 +34,32 @@ const imgSites = [
 ];
 
 
+// Function to generate random word
+const wordRand = () => words[Math.floor(Math.random() * words.length)];
+
+// Funtion to generate nav link words
+const navLinks = document.querySelector('.nav-links');
+const navWords = [];
+let word;
+for (let i = 1; i <= 5; i += 1) {
+  const link = document.createElement('a');
+  word = wordRand();
+  if (navWords.includes(word)) {
+    word = wordRand();
+  }
+  navWords.push(word);
+  link.innerHTML = `${word}`;
+  navLinks.appendChild(link);
+}
+
+// Main Header generate word
+const headerText = document.querySelector('.header-text');
+word = wordRand();
+if (navWords.includes(word)) {
+  word = wordRand();
+}
+headerText.innerHTML = `${word}`;
+
 // Function to dynamically generate layouts
 const addRow = () => {
   const row = document.createElement('section');
@@ -46,6 +72,9 @@ const addRow = () => {
     const justify = Math.floor(Math.random() * 3);
     switch (justify) {
       case 0:
+        if (cardsNum === 2) {
+          row.classList.add('center');
+        }
         row.classList.add('space-between');
         break;
       case 1:
@@ -69,7 +98,7 @@ const addRow = () => {
   switch (cardsNum) {
     case 1:
       cardClass = 'card-1';
-      cardSize = '/700/500';
+      cardSize = '/900/600';
       break;
     case 2:
       cardClass = 'card-2';
@@ -107,9 +136,9 @@ const addRow = () => {
 
     // Randomly choose a card text description
     const cardText = document.createElement('div');
-    const wordRand = words[Math.floor(Math.random() * words.length)];
+    const wordCard = wordRand();
     cardText.classList.add('card-text');
-    cardText.innerHTML = `${wordRand}`;
+    cardText.innerHTML = `${wordCard}`;
     card.appendChild(img);
     card.appendChild(cardText);
 
