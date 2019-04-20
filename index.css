@@ -219,6 +219,10 @@ body {
 	padding-left: 3rem;
 }
 
+.pic-half .card-img {
+	width: 100%;
+}
+
 .text-half {
 	display: flex;
 	flex-direction: column;
