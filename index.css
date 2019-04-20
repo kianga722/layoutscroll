@@ -173,10 +173,7 @@ body {
 .card {
 	margin: 1rem;
 	padding: 2rem;
-}
-
-.card-img {
-	width: 100%;
+	text-align: center;
 }
 
 .card-1, .card-2 {
