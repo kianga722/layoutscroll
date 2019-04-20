@@ -176,9 +176,22 @@ body {
 	text-align: center;
 }
 
+.card-img {
+	width: 100%;
+}
+
 .card-1, .card-2 {
 	font-size: 2rem;
 }
+
+.card-1 .card-img {
+	width: 80%;
+}
+
+.card-2 .card-img {
+	width: 70%;
+}
+
 
 .card-3 {
 	font-size: 1.5rem;
