@@ -3,7 +3,7 @@ This is a project exploring infinite scroll and dynamically generating layout el
 
 [View App](https://kianga722.github.io/layoutscroll)
 
-![screenshot](https://github.com/kianga722/layoutscroll/screenshot.jpg)
+![screenshot](https://github.com/kianga722/layoutscroll/blob/master/screenshot.png)
 
 ## Summary
 
