@@ -65,6 +65,7 @@ body {
 	justify-content: space-between;
 	background-color: #fff;
 	z-index: 10;
+	opacity: 0.97;
 }
 
 #logo {
