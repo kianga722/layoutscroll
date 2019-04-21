@@ -194,7 +194,6 @@ body {
 	width: 70%;
 }
 
-
 .card-3 {
 	font-size: 1.5rem;
 }
@@ -262,8 +261,8 @@ body {
 
 	#about {
 		margin-top: 0; 
-		font-size: 1.3rem;
-		line-height: 2rem;
+		font-size: 1.1rem;
+		line-height: 1.5rem;
 	}
 
 	.cols-2 {
@@ -277,9 +276,18 @@ body {
 	.card-1, .card-2 {
 		font-size: 1.5rem;
 	}
+
+	.card-1 .card-img,
+	.card-2 .card-img {
+		width: 100%;
+	}
 	
 	.card-3, .card-text, .hybrid-text {
 		font-size: 1rem;
+	}
+
+	.card-title {
+		font-size: 1.5rem;
 	}
 
 	.text-half {
