@@ -231,9 +231,9 @@ document.addEventListener('scroll', () => {
   // Add some transparency to navbar if not scrolled
   const nav = document.querySelector('#nav');
   if (window.pageYOffset === 0) {
-    nav.classList.remove('transparent');
+    nav.classList.remove('nav-scrolled');
   } else {
-    nav.classList.add('transparent');
+    nav.classList.add('nav-scrolled');
   }
   // Check if scrolled to bottom and generate elements if triggered
   if (window.innerHeight + window.pageYOffset >= document.body.offsetHeight) {

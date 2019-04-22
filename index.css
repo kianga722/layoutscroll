@@ -67,8 +67,17 @@ body {
 	z-index: 10;
 }
 
-.transparent {
+.nav-scrolled {
 	opacity: 0.97;
+}
+
+.nav-scrolled #logo {
+	padding: 0;
+}
+
+.nav-scrolled img {
+	transform: scale(0.7);
+	transition: all .2s ease-in;
 }
 
 #logo {
@@ -82,6 +91,7 @@ body {
 #logo img {
 	border-radius: 50px;
 	cursor: pointer;
+	transition: all .2s ease-in;
 }
 
 .nav-links {
