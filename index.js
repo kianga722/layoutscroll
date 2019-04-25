@@ -46,6 +46,15 @@ const genLayout = (() => {
     "Who moved my cheese cheesecake pepper jack manchego stinking bishop cheeseburger when the cheese comes out everybody's happy babybel.",
   ];
 
+  // Animation bank classes
+  const animations = [
+    'slideLeft',
+    'slideRight',
+    'fadeIn',
+    'enlarge',
+    'rotate',
+  ];
+
   // Function to randomly grab element in array
   const arrRand = arr => arr[Math.floor(Math.random() * arr.length)];
   // Function to randomly generate number 1 to 3
@@ -165,7 +174,7 @@ const genLayout = (() => {
     const row = document.createElement('section');
     // Randomly generate number of cards
     const cardsNum = cardRand();
-    row.classList.add('row', `cols-${cardsNum}`);
+    row.classList.add('row', `${arrRand(animations)}`, `cols-${cardsNum}`);
 
     // Change card class based on number of cards
     let cardClass;
