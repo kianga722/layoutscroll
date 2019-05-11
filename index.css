@@ -224,7 +224,7 @@ body {
 }
 
 .card-title {
-	padding: 2rem 1rem 1rem 1rem;
+	padding: 1rem 1rem 1rem 1rem;
 	text-align: center; 
 	font-weight: 700;
 }
@@ -250,7 +250,7 @@ body {
 }
 
 .hybrid-title {
-	padding: 2rem 1rem 1rem 0;
+	padding: 1rem 1rem 1rem 0;
 	text-align: left;
 	font-weight: 700;
 }
@@ -327,6 +327,10 @@ body {
 		display: none;
 	}
 
+	#header-top img {
+		max-height: 30vh;
+	}
+
 	.header-text {
 		font-size: 2.2rem
 	}
@@ -345,13 +349,15 @@ body {
 		grid-template-columns: 1fr;
 	}
 
+	.card-1 .card-img,
+	.card-2 .card-img, 
+	.card-3 .card-img {
+		width: 100%;
+		max-width: 50vw;
+	}
+	
 	.card-1, .card-2 {
 		font-size: 1.5rem;
-	}
-
-	.card-1 .card-img,
-	.card-2 .card-img {
-		width: 100%;
 	}
 	
 	.card-3, .card-text, .hybrid-text {
