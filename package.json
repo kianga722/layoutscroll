@@ -1,0 +1,22 @@
+{
+  "name": "layoutscroll",
+  "version": "1.0.0",
+  "description": "This is a project exploring infinite scroll and dynamically generating layout elements",
+  "main": "index.js",
+  "scripts": {
+    "watch": "npx tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kianga722/layoutscroll.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kianga722/layoutscroll/issues"
+  },
+  "homepage": "https://github.com/kianga722/layoutscroll#readme",
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  }
+}
